@@ -1,0 +1,239 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 80px;
+  -webkit-box-shadow: 0 -4px 15px 6px #ededed;
+          box-shadow: 0 -4px 15px 6px #ededed;
+  background-color: #fff;
+}
+
+.nav-container .header-image-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav-container .header-image-container .header-image {
+  width: 300px;
+  height: 133px;
+  background-size: 100% 100%;
+  margin: 20px 0;
+}
+
+.nav-container .nav-bar {
+  width: 50%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.nav-container .nav-bar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3f90d1;
+  line-height: 27px;
+  font-size: 20px;
+  opacity: 0.5;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-container .nav-bar .nav-links::after {
+  content: "";
+  display: none;
+  height: 8px;
+  position: absolute;
+  background: #ffcc00;
+  width: 100%;
+  bottom: 0;
+}
+
+.nav-container .nav-bar .nav-links:hover {
+  opacity: 1;
+}
+
+.nav-container .nav-bar .nav-links:hover::after {
+  display: block;
+}
+
+.nav-container .header-button-container .header-button {
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: #fbca01;
+  color: #003471;
+  line-height: 27px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.form-holder {
+  margin: 100px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 591px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form-holder .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 20px;
+  border-radius: 18px;
+  background: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-holder .form-container input {
+  width: 589px;
+  background: #e8f5fe;
+  color: #003471;
+  border-radius: 11px;
+  border: none;
+  position: relative;
+  margin-bottom: 35px;
+  padding: 20px 45px 20px;
+}
+
+.form-holder .form-container input::-webkit-input-placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container input:-ms-input-placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container input::-ms-input-placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container input::placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container input:focus {
+  border: none;
+}
+
+.form-holder .form-container textarea {
+  width: 589px;
+  border: none;
+  background: #e8f5fe;
+  border-radius: 11px;
+  padding: 20px 45px 20px;
+  resize: none;
+  position: relative;
+  height: 185px;
+}
+
+.form-holder .form-container textarea::-webkit-input-placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container textarea:-ms-input-placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container textarea::-ms-input-placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container textarea::placeholder {
+  color: #003471;
+}
+
+.form-holder .form-container .submit {
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: #fbca01;
+  color: #003471;
+  border: none;
+  margin-top: 35px;
+}
+
+.form-holder .form-container .input-container {
+  position: relative;
+}
+
+.form-holder .form-container em {
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+
+.form-holder .form-container #name + em {
+  background: url(/images/svg/person.svg);
+  background-size: 100% 100%;
+}
+
+.form-holder .form-container #email + em {
+  background: url(/images/svg/email.svg);
+  background-size: 100% 100%;
+}
+
+.form-holder .form-container #mobile + em {
+  background: url(/images/svg/phone.svg);
+  background-size: 100% 100%;
+}
+
+.form-holder .form-container #more + em {
+  background: url(/images/svg/info.svg);
+  background-size: 100% 100%;
+}
+
+.form-holder .main-section-image {
+  background-size: 100% 100%;
+  width: 40%;
+}
+/*# sourceMappingURL=global.css.map */
